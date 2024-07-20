@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+
 
 /* Loading screen styles */
 .loading-screen {
@@ -36,17 +38,15 @@ body, html {
 
 .container {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Space between items */
   height: 100vh;
   background-color: #E7F0DC;
+  padding: 0 2rem; /* Add padding to container */
 }
 
 .page1-text-content {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  opacity: 25%;
+  opacity: 15%;
   color: #729762;
 }
 
@@ -64,20 +64,24 @@ body, html {
   display: none;
 }
 
-/* Mobile view - 10 times */
-@media (max-width: 768px) {
-  .page1-text-content p {
-    font-size: 10vh;
-    line-height: 0.9;
-  }
-  
-  .extra {
-    display: block;
-  }
+
+/* Page 1 right text styles */
+.page1-right-text {
+  color: #597445;
+  font-size: 12vh; /* Adjust font size as needed */
+  font-family: "Beiruti", sans-serif;
+  text-align: right;
+  width: 40%; /* Adjust width as needed */
 }
+
+
 
 /* iPad view - 10 times */
 @media (min-width: 769px) and (max-width: 1024px) {
+  .page1-text-content {
+    position: relative; /* Ensure that the container is positioned relatively */
+  }
+
   .page1-text-content p {
     font-size: 10vh;
     line-height: 0.9;
@@ -86,4 +90,48 @@ body, html {
   .extra {
     display: block;
   }
+
+  .page1-right-text {
+    position: absolute; /* Position the text absolutely within the parent container */
+    top: 40%; /* Adjust as needed */
+    right: 0; /* Align to the right */
+    color: #597445;
+    font-size: 6vh; /* Adjust font size as needed */
+    font-family: "Beiruti", sans-serif;
+    text-align: right;
+    width: 100%; /* Adjust width as needed */
+    padding-right: 2vh;
+  }
+  
 }
+
+
+/* Mobile view - 10 times */
+@media (max-width: 768px) {
+  .page1-text-content {
+    position: relative; /* Ensure that the container is positioned relatively */
+  }
+
+  .page1-text-content p {
+    font-size: 10vh;
+    line-height: 0.9;
+  }
+
+  .extra {
+    display: block;
+  }
+
+  .page1-right-text {
+    position: absolute; /* Position the text absolutely within the parent container */
+    top: 40%; /* Adjust as needed */
+    right: 0; /* Align to the right */
+    color: #597445;
+    font-size: 6vh; /* Adjust font size as needed */
+    font-family: "Beiruti", sans-serif;
+    text-align: right;
+    width: 100%; /* Adjust width as needed */
+    padding-right: 2vh;
+  }
+}
+
+  
