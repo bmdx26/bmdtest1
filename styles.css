@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
 
-
 /* Loading screen styles */
 .loading-screen {
     position: fixed;
@@ -28,7 +27,6 @@
 }
 
 /* Rest of your CSS code */
-
 body, html {
   margin: 0;
   padding: 0;
@@ -64,7 +62,6 @@ body, html {
   display: none;
 }
 
-
 /* Page 1 right text styles */
 .page1-right-text {
   color: #597445;
@@ -73,8 +70,6 @@ body, html {
   text-align: right;
   width: 40%; /* Adjust width as needed */
 }
-
-
 
 /* iPad view - 10 times */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -102,9 +97,7 @@ body, html {
     width: 100%; /* Adjust width as needed */
     padding-right: 2vh;
   }
-  
 }
-
 
 /* Mobile view - 10 times */
 @media (max-width: 768px) {
